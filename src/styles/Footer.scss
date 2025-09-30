@@ -1,0 +1,39 @@
+@import './variables';
+
+.footer {
+  background-color: $primary-color; 
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $text-color;
+
+  .links {
+    margin-top: 0.5rem;
+
+    a {
+      margin: 0 0.5rem;
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.8rem;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin: 0.25rem 0;
+      }
+    }
+  }
+}
